@@ -163,6 +163,6 @@
         ctx.error_alert = error_alert;
         ctx.error_notify = error_notify;
         ctx.error_absorb = error_absorb;
-        ctx.error_makeAlertWithId;
+        ctx.error_makeAlertWithId = error_makeAlertWithId;
     }
 })(window, 'fetch' in window.jQuery ? window.jQuery.fetch.fn_text : '', 'fetch' in window.jQuery ? window.jQuery.fetch.do_globals : false);
