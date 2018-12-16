@@ -10,11 +10,11 @@
         return true;
     }
 
-    function promiseFetchJQ(url, data, condition)
+    function promiseFetchJQ(url, data, condition, xhr_callback)
     {
         return new Promise(function (resolve, reject)
         {
-            (data === undefined ? ctx.jQuery.get : ctx.jQuery.post)(url, data, function (r)
+            var xhr = (data === undefined ? ctx.jQuery.get : ctx.jQuery.post)(url, data, function (r)
             {
                 if (condition === undefined || condition === null)
                     resolve(r);
@@ -24,6 +24,7 @@
                 (matchObects(condition, r) ? resolve : reject)(r);
             })
                 .fail(function (r) { reject(r); });
+            if (xhr_callback) xhr_callback(xhr);
         });
     }
 
