@@ -1,6 +1,13 @@
 # jquery-fetch
 A promise based wrapper around jQuery that dynamically picks between get and post and implements validation and error reporting.
 
+## Download
+Find in [Releases](https://github.com/DAud-IcI/jquery-fetch/releases) or just inlcude from cdnjs:
+```javascript
+<script src="https://cdn.jsdelivr.net/gh/daud-ici/jquery-fetch@0.2/jquery-fetch.min.js"></script>
+```
+
+
 ## Configuration
 Simply include it into your headers below jQuery.
 You can specify a prefix message in the error notification by creating jQuery.fetch as an object prior to importing the library:
