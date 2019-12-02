@@ -4,7 +4,7 @@ A promise based wrapper around jQuery that dynamically picks between get and pos
 ## Download
 Find in [Releases](https://github.com/DAud-IcI/jquery-fetch/releases) or just inlcude from cdnjs:
 ```javascript
-<script src="https://cdn.jsdelivr.net/gh/daud-ici/jquery-fetch@0.2/jquery-fetch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/daud-ici/jquery-fetch@v0.3/jquery-fetch.min.js"></script>
 ```
 
 
